@@ -1,0 +1,28 @@
+/* cormorantgaramond italic 400-700 (all unicode) - using single local woff2: co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2 */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(../fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2) format('woff2');
+}
+
+/* cormorantgaramond normal 400-700 (all unicode) - using single local woff2: co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2 */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(../fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2) format('woff2');
+}
+
+/* inter normal 100-900 (all unicode) - using single local woff2: UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2 */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(../fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
+}
+
+/* inter italic 100-900 fall back to system sans-serif italic */
