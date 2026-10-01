@@ -1,0 +1,136 @@
+.hero-section {
+    position: relative
+}
+
+.template-index .hero-section {
+    margin-top: calc(-1 * var(--header-height))
+}
+
+.hero {
+    position: relative;
+    min-height: var(--hero-min-height, 100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden
+}
+
+.hero__media {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0
+}
+
+.hero__image,
+.hero__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.hero__placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-tertiary) 50%, var(--color-bg-secondary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.hero__placeholder-svg {
+    width: 30%;
+    height: auto;
+    fill: var(--color-border);
+    opacity: .3
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, var(--hero-overlay-opacity, .4));
+    z-index: 1
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl)
+}
+
+.hero__content--center {
+    text-align: center
+}
+
+.hero__content--left {
+    text-align: left
+}
+
+.hero__content--right {
+    text-align: right
+}
+
+.hero__content-inner {
+    max-width: 800px
+}
+
+.hero__content--center .hero__content-inner {
+    margin: 0 auto
+}
+
+.hero__subheading {
+    font-family: var(--font-body);
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 var(--space-lg) 0
+}
+
+.hero__heading {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 300;
+    letter-spacing: .06em;
+    line-height: 1.05;
+    color: var(--color-text);
+    margin: 0 0 var(--space-xl) 0
+}
+
+.hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md)
+}
+
+.hero__content--center .hero__buttons {
+    justify-content: center
+}
+
+.hero__content--right .hero__buttons {
+    justify-content: flex-end
+}
+
+@media(max-width:767px) {
+    .hero__heading {
+        letter-spacing: .04em
+    }
+    .hero__buttons {
+        flex-direction: column;
+        align-items: stretch
+    }
+    .hero__content--center .hero__buttons,
+    .hero__content--right .hero__buttons {
+        align-items: stretch
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/19/assets/hero.css.map?v=157839607554527706971789568805 */
